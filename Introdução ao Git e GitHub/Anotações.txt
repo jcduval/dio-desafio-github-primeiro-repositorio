@@ -1,2 +1,29 @@
 Link para download do Git : https://git-scm.com/downloads
 O Git Basch é um terminal extendido para otimizar o uso do Git.
+
+Upload de conteúdos locais para a Web.
+
+Para atualizar a pasta local do computador com seu repostório na web é necessário os comandos abaixo.
+
+1) Após modificação/adicionar arquivo ou pasta
+	$ git status
+Mostra em vermelho o que há de novo.
+- Untracked files: abaixo em vermelho o que há de novo
+
+2) Adicionar as alterações no "track"
+	$ git add .   ou  git add -A
+
+3) Verificar a adição
+	$git status
+Mostra em verde o que há de novo
+ - changes to be committed : Está em verde o que foi adicionado a lista de conteúdos
+
+4) "Commit" as modificações
+	$ git commit -m "Inclusão das anotações ao Git/GitHub"   ( -m para adicionar os comentários para documentar )
+	$ git status mostra que não há mais nada para commit
+
+5) Enviar / Sincronizar com o repositório na web
+	$ git push origin main
+
+Finalizado.
+
